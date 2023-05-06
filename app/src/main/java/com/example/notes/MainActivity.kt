@@ -9,14 +9,12 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
-import androidx.compose.material.Button
 import androidx.compose.material.Card
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
-import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
@@ -200,7 +198,7 @@ private fun AddButton() {
             .padding(24.dp)
             .size(64.dp)
             .clip(CircleShape)
-            .background(Color.Yellow)
+            .background(color = Color(R.color.grey))
             .clickable { },
         contentAlignment = Alignment.Center
 
@@ -209,8 +207,7 @@ private fun AddButton() {
             text = "+",
             color = Color.White,
             fontWeight = FontWeight.Bold,
-            fontSize = 36.sp,
-
+            fontSize = 36.sp
             )
     }
 }
